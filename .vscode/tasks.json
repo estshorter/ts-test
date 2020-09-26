@@ -20,7 +20,7 @@
     },
     {
       "type": "npm",
-      "label": "clean",
+      "label": "npm: clean",
       "script": "clean",
       "detail": "rimraf dist/*",
       "problemMatcher": []
