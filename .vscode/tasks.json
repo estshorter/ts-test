@@ -4,7 +4,7 @@
     {
       "type": "npm",
       "script": "dev",
-      "problemMatcher": [],
+      "problemMatcher": "$tsc",
       "label": "npm: dev",
       "detail": "ts-node src/index.ts",
       "group": {
@@ -15,8 +15,15 @@
     {
       "label": "Compile TypeScript",
       "type": "shell",
-      "command": "npx tsc -p ${workspaceFolder}",
+      "command": "npx tsc ",
       "problemMatcher": "$tsc"
+    },
+    {
+      "type": "npm",
+      "label": "clean",
+      "script": "clean",
+      "detail": "rimraf dist/*",
+      "problemMatcher": []
     }
   ]
 }
